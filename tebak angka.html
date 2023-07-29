@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Game Tebak Angka</title>
+    <style>
+      /* styling untuk game board */
+      #game-board {
+        width: 300px;
+        height: 200px;
+        border: 2px solid black;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(https://img.freepik.com/premium-vector/gamepad-low-poly-wireframe-style-e-learning-distance-concept-computer-games-polygonal-abstract-isolated-dark-background-vector_145342-252.jpg?w=2000);
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+    }
+    h1{
+      color:white;
+    }
+
+       
+       
+    </style>
+  </head>
+  <body>
+    <div id="game-board">
+      <h1>Game Tebak Angka</h1>
+      <p id="message"></p>
+      <input type="number" id="guess" min="1" max="100" placeholder="Masukkan tebakan Anda">
+      <button id="submit">Tebak</button>
+      <button id="reset">Mulai Ulang</button>
+    </div>
+    <script src="tebak-angka.js"></script>
+  </body>
+  <footer>
+		<p>&copy; DEFALT</p>
+	</footer>
+</html>
